@@ -1,0 +1,38 @@
+
+INSERT INTO pais (id_pais, nome_pais) VALUES (1, 'Brasil');
+INSERT INTO pais (id_pais, nome_pais) VALUES (2, 'Argentina');
+INSERT INTO pais (id_pais, nome_pais) VALUES (3, 'Chile');
+INSERT INTO pais (id_pais, nome_pais) VALUES (4, 'Uruguai');
+INSERT INTO pais (id_pais, nome_pais) VALUES (5, 'Paraguai');
+
+
+INSERT INTO estado (id_estado, nome_estado, id_pais) VALUES (1, 'São Paulo', 1);
+INSERT INTO estado (id_estado, nome_estado, id_pais) VALUES (2, 'Rio de Janeiro', 1);
+INSERT INTO estado (id_estado, nome_estado, id_pais) VALUES (3, 'Buenos Aires', 2);
+INSERT INTO estado (id_estado, nome_estado, id_pais) VALUES (4, 'Cordoba', 2);
+INSERT INTO estado (id_estado, nome_estado, id_pais) VALUES (5, 'Valparaíso', 3);
+
+INSERT INTO cidade (id_cidade, nome_cidade, id_estado) VALUES (1, 'São Paulo', 1);
+INSERT INTO cidade (id_cidade, nome_cidade, id_estado) VALUES (2, 'Campinas', 1);
+INSERT INTO cidade (id_cidade, nome_cidade, id_estado) VALUES (3, 'Rio de Janeiro', 2);
+INSERT INTO cidade (id_cidade, nome_cidade, id_estado) VALUES (4, 'Buenos Aires', 3);
+INSERT INTO cidade (id_cidade, nome_cidade, id_estado) VALUES (5, 'Valparaíso', 5);
+
+
+INSERT INTO bairro (id_bairro, nome_bairro, id_cidade) VALUES (1, 'Centro', 1);
+INSERT INTO bairro (id_bairro, nome_bairro, id_cidade) VALUES (2, 'Jardim Paulista', 1);
+INSERT INTO bairro (id_bairro, nome_bairro, id_cidade) VALUES (3, 'Copacabana', 3);
+INSERT INTO bairro (id_bairro, nome_bairro, id_cidade) VALUES (4, 'Recoleta', 4);
+INSERT INTO bairro (id_bairro, nome_bairro, id_cidade) VALUES (5, 'Viña del Mar', 5);
+
+
+INSERT INTO endereco_cliente (id_endereco, cep, logradouro, numero, referencia, id_bairro) 
+VALUES (1, 12345678, 'Avenida Paulista', 1000, 'Próximo ao shopping', 2);
+INSERT INTO endereco_cliente (id_endereco, cep, logradouro, numero, referencia, id_bairro) 
+VALUES (2, 87654321, 'Rua das Flores', 150, 'Perto da praça', 3);
+INSERT INTO endereco_cliente (id_endereco, cep, logradouro, numero, referencia, id_bairro) 
+VALUES (3, 12398745, 'Avenida Atlântica', 200, 'Frente ao mar', 3);
+INSERT INTO endereco_cliente (id_endereco, cep, logradouro, numero, referencia, id_bairro) 
+VALUES (4, 45632178, 'Rua Florida', 300, 'Esquina com principal', 4);
+INSERT INTO endereco_cliente (id_endereco, cep, logradouro, numero, referencia, id_bairro) 
+VALUES (5, 98712345, 'Calle Valparaíso', 400, 'Próximo ao porto', 5);
